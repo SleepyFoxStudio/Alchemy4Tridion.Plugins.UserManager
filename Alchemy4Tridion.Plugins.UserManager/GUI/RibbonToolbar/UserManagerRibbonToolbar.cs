@@ -15,6 +15,7 @@ namespace Alchemy4Tridion.Plugins.UserManager.GUI.RibbonToolbar
 
             // The label of the button.
             Name = "Clone Rights";
+            GroupId = "AccessManagementGroup";
 
             // The page tab to assign this extension to. See Constants.PageIds.
             PageId = Constants.PageIds.AdministrationPage;
