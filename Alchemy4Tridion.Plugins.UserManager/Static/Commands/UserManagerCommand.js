@@ -1,5 +1,5 @@
 ﻿// ATTENTION: Modify "YourCommandName" to the name of your actual command
-Alchemy.command("${PluginName}", "YourCommandName", {
+Alchemy.command("${PluginName}", "UserManager", {
 
     /**
      * Called when the command is constructed.

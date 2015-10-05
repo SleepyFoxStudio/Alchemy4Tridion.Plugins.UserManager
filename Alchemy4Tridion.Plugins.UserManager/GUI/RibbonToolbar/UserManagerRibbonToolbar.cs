@@ -8,10 +8,10 @@ namespace Alchemy4Tridion.Plugins.UserManager.GUI.RibbonToolbar
         public UserManagerRibbonToolbar()
         {
             // The unique identifier used for the html element created.
-            AssignId = "UserManager";
+            AssignId = "UserManagerButton";
 
             // The name of the command to execute when clicked
-            Command = "";
+            Command = "OpenCloneUserPopup";
 
             // The label of the button.
             Name = "Clone Rights";

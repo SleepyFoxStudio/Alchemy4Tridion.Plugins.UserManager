@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.alchemywebstore.com/">
-  <description><![CDATA[Tridion user manager]]></description>
+<plugin xmlns:c="http://www.alchemywebstore.com/configuration/definitions" xmlns="http://www.alchemywebstore.com/">
   <name>UserManager</name>
+  <description><![CDATA[Tridion user manager]]></description>
 </plugin>
