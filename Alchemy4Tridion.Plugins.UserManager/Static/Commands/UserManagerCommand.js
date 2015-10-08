@@ -2,30 +2,40 @@
 Alchemy.command("${PluginName}", "UserManager", {
 
     /**
-     * Called when the command is constructed.
-     */
-    init: function () {
-
-    },
-
-    /**
-     * Whether or not the item the command is attached to is available.
-     */
-    isAvailable: function (selection) {
+      * Whether or not the command is enabled for the user (will usually have extensions displayed but disabled).
+      * @returns {boolean}
+      */
+    isEnabled: function () {
         return true;
     },
 
     /**
-     * Whether or not the item the command is attached to is enabled (if available and not enabled, will show as disabled state).
+     * Whether or not the command is available to the user.
+     * @returns {boolean}
      */
-    isEnabled: function (selection) {
+    isAvailable: function () {
         return true;
     },
 
     /**
-     * The action that is performed when someone clicks on the item the command is attached to.
+     * Executes your command. You can use _execute or execute as the property name.
      */
-    execute: function (selection) {
+    execute: function () {
 
+        var progress = $messages.registerProgress("Getting api version...", null),
+            userName = "AlchemyTester";
+
+        // This is the error first callback pattern that the webapi proxy js exposes. Look at another example to
+        // see how the promise pattern can also be used.
+
+        // The call back must go as last parameter of action method.
+        Alchemy.Plugins["${PluginName}"].Api.HelloService.helloWorld(userName, function (error, message) {
+            progress.finish({ success: true });
+            if (error) {
+                // error will only exist if there was an error, otherwise it'll be null.
+                $messages.registerError("There was an error", error.message);
+            }
+            $messages.registerGoal(message, null);
+        });
     }
 });

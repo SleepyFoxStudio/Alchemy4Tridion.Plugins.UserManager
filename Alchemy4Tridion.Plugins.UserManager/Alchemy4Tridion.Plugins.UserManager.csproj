@@ -83,7 +83,7 @@
     </Content>
     <Content Include="Static\Commands\OpenCloneUserPopup.js" />
     <Content Include="Static\Commands\UserManagerCommand.js" />
-    <Content Include="Static\Images\icon-15x16.png" />
+    <Content Include="Static\Images\icon-16x16.png" />
     <Content Include="Static\Images\icon-32x32.png" />
     <Content Include="Static\Styles\UserManagerStyles.css" />
     <Content Include="Static\Views\CloneUser.aspx">
