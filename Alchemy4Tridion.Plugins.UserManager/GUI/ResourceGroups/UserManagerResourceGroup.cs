@@ -12,7 +12,7 @@ namespace Alchemy4Tridion.Plugins.UserManager.GUI.ResourceGroups
         public UserManagerResourceGroup()
         {
             //Add the Js files
-            AddFile("UserManagerCommand.js");
+            AddFile("CloneUserCommand.js");
             AddFile("OpenCloneUserPopup.js");
 
             //Add the CSS

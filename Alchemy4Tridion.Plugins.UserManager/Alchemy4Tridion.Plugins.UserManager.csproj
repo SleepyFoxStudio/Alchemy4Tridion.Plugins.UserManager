@@ -82,7 +82,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Static\Commands\OpenCloneUserPopup.js" />
-    <Content Include="Static\Commands\UserManagerCommand.js" />
+    <Content Include="Static\Commands\CloneUserCommand.js" />
     <Content Include="Static\Images\icon-16x16.png" />
     <Content Include="Static\Images\icon-32x32.png" />
     <Content Include="Static\Styles\UserManagerStyles.css" />
