@@ -6,7 +6,7 @@ namespace Alchemy4Tridion.Plugins.UserManager.GUI
     {
         public UserManagerCommandSet()
         {
-            AddCommand("CloneUser");
+            //AddCommand("CloneUser");
             AddCommand("OpenCloneUserPopup");
         }
     }
