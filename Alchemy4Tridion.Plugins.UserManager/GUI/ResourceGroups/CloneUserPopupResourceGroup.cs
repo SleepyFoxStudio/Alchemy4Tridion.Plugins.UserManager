@@ -7,6 +7,9 @@ namespace Alchemy4Tridion.Plugins.UserManager.GUI.ResourceGroups
     {
         public CloneUserPopupResourceGroup()
         {
+            AddFile("tablesort.js");
+            AddFile("tablesort.css");
+            AddFile("UserManagerStyles.css");
 
             AttachToView("CloneUser.aspx");
             Dependencies.AddLibraryJQuery();

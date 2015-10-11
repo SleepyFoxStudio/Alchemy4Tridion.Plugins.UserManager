@@ -1,16 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <meta charset="utf-8" />
     <title>Clone User</title>
-
 </head>
-<link rel="stylesheet" type="text/css" href="${CssUrl}/UserManagerPopup.css" />
-<link rel="stylesheet" type="text/css" href="${CssUrl}/tablesort.css" />
-<script type="text/javascript">
-    jQuery = Alchemy.library("jQuery");
-</script>
-<script type="text/javascript" src="${JsUrl}/tablesort.js"></script>
 <body>
     <h1>Clone User</h1>
 
@@ -60,6 +53,7 @@
 
 
     <script type="text/javascript">
+        jQuery = Alchemy.library("jQuery");
         jQuery(function () {
             jQuery('table.table-sort').tablesort();
         });

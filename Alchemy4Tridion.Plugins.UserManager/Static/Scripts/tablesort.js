@@ -365,4 +365,4 @@
     });
   };
 
-})( jQuery, window, document );
+})( Alchemy.library("jQuery"), window, document );
