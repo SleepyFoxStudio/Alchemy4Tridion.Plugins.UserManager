@@ -1,0 +1,118 @@
+﻿table
+{
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: #212326;
+}
+
+
+body, 
+input, 
+select, 
+td,
+table
+{
+  font-family: Verdana;
+  font-size: 11px;
+}
+
+table.dataTable thead th{
+  color: rgb(65, 70, 76);
+  cursor: default;
+  background-color: rgb(237, 237, 237);
+  border:1px solid rgb(138, 145, 153);
+  border-bottom:0px;
+  border-right:0px;
+  text-align: left;
+
+  padding-top:3px;
+  padding-bottom:3px;
+  font-weight:normal;
+}
+table.dataTable tbody td
+{
+  padding-top:3px;
+  padding-bottom:3px;
+}
+
+table.dataTable.display tbody tr.odd.selected,table.dataTable.display tbody  tr.selected,table.dataTable.display tbody tr:hover.selected
+{
+  background-color: rgb(190, 210, 240);
+}
+
+.button{
+  -webkit-user-select: none;
+  background-color: rgb(255, 255, 255);
+  background-image: -webkit-linear-gradient(top, rgb(255, 255, 255) 0px, rgb(207, 207, 207) 100%);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  border-color: rgb(69, 69, 69);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px; 
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(69, 69, 69);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(69, 69, 69);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(69, 69, 69);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(65, 70, 76);
+  cursor: pointer;
+  display: block;
+  float: right;
+  font-family: Verdana;
+  font-size: 11px;
+  height: 17px;
+  line-height: normal;
+  margin: 6px;
+  min-height: 0px;
+  min-width: 98px;
+  opacity: 1;
+  outline-color: rgb(65, 70, 76);
+  outline-style: none;
+  outline-width: 0px;
+
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: bottom;
+}
+
+.button .text
+{
+  line-height: 17px;
+}
+
+legend {
+  color: #2972cc;
+
+}
+
+.dataTables_scrollHead
+{
+  background-color: rgb(237, 237, 237);  
+}
+
+
+.dataTables_scrollBody
+{
+
+  font-size:90px;
+  border:1px solid rgb(138, 145, 153);
+}
+
+
+table.dataTable thead th, table.dataTable thead td ,table.dataTable tbody th, table.dataTable tbody td{
+  padding-left: 8px ;
+}

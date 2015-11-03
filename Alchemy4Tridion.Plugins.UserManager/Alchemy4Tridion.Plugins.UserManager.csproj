@@ -85,6 +85,8 @@
     <Content Include="Static\Commands\UserManagerCommand.js" />
     <Content Include="Static\Images\icon-16x16.png" />
     <Content Include="Static\Images\icon-32x32.png" />
+    <Content Include="Static\Scripts\CloneUserPopup.js" />
+    <Content Include="Static\Styles\TridionUI.css" />
     <Content Include="Static\Styles\UserManagerStyles.css" />
     <Content Include="Static\Views\CloneUser.aspx">
       <SubType>ASPXCodeBehind</SubType>
@@ -95,7 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Static\Scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Alchemy4Tridion.Plugin.1.0.0-beta6-2\build\net40\Alchemy4Tridion.Plugin.targets" Condition="Exists('..\packages\Alchemy4Tridion.Plugin.1.0.0-beta6-2\build\net40\Alchemy4Tridion.Plugin.targets')" />
