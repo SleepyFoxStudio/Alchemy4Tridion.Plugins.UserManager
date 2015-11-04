@@ -66,12 +66,7 @@
     </table>
 
 
-    <script type="text/javascript">
-        jQuery = Alchemy.library("jQuery");
-        jQuery(function () {
-            jQuery('table.table-sort').tablesort();
-        });
-</script>
+
 
 </body>
 
