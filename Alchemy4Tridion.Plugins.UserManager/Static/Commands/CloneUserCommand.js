@@ -1,12 +1,22 @@
 ﻿// ATTENTION: Modify "YourCommandName" to the name of your actual command
-Alchemy.command("${PluginName}", "UserManager", {
+Alchemy.command("${PluginName}", "CloneUser", {
 
     /**
       * Whether or not the command is enabled for the user (will usually have extensions displayed but disabled).
       * @returns {boolean}
       */
-    isEnabled: function () {
-        return true;
+    isEnabled: function (selection) {
+        // Gets the selected item in Tridion GUI
+        var items = selection.getItems();
+        var item = $models.getItem(selection.getItem(0));
+        // Checks if an item has been selected and if it has whether it's a catagory or the ugc tab since
+        // where used has no function with those
+        if (items.length >= 1 && item.getItemType() != 'cme:catman' && item.getItemType() != 'ugc:root') {
+            return true;
+        }
+        else {
+            return false;
+        }
     },
 
     /**

@@ -1,4 +1,30 @@
 ﻿Alchemy.command("UserManager", "OpenCloneUserPopup", {
+    /**
+    * Whether or not the command is enabled for the user (will usually have extensions displayed but disabled).
+    * @returns {boolean}
+    */
+    isEnabled: function (selection) {
+        // Gets the selected item in Tridion GUI
+        var items = selection.getItems();
+        var item = $models.getItem(selection.getItem(0));
+        // Checks if an item has been selected and if it has whether it's a catagory or the ugc tab since
+        // where used has no function with those
+        if (items.length == 1 && item.getItemType() == 'tcm:65552' ) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    },
+
+    /**
+     * Whether or not the command is available to the user.
+     * @returns {boolean}
+     */
+    isAvailable: function () {
+        return true;
+    },
+
     execute: function () {
         var url = "${ViewsUrl}CloneUser.aspx";
 

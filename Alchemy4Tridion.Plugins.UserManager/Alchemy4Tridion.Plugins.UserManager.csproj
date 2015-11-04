@@ -71,6 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\ResourceGroups\CloneUserPopupResourceGroup.cs" />
     <Compile Include="GUI\ResourceGroups\UserManagerResourceGroup.cs" />
     <Compile Include="GUI\RibbonToolbar\UserManagerRibbonToolbar.cs" />
     <Compile Include="GUI\UserManagerCommandSet.cs" />
@@ -82,9 +83,11 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Static\Commands\OpenCloneUserPopup.js" />
-    <Content Include="Static\Commands\UserManagerCommand.js" />
+    <Content Include="Static\Commands\CloneUserCommand.js" />
     <Content Include="Static\Images\icon-16x16.png" />
     <Content Include="Static\Images\icon-32x32.png" />
+    <Content Include="Static\Scripts\tablesort.js" />
+    <Content Include="Static\Styles\tablesort.css" />
     <Content Include="Static\Scripts\CloneUserPopup.js" />
     <Content Include="Static\Styles\TridionUI.css" />
     <Content Include="Static\Styles\UserManagerStyles.css" />

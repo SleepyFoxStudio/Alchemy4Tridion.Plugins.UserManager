@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <meta charset="utf-8" />
     <title>Clone User</title>
     <link rel="stylesheet" type="text/css" href="${CssUrl}/TridionUI.css" />
@@ -66,6 +66,12 @@
     </table>
 
 
+    <script type="text/javascript">
+        jQuery = Alchemy.library("jQuery");
+        jQuery(function () {
+            jQuery('table.table-sort').tablesort();
+        });
+</script>
 
 </body>
 
