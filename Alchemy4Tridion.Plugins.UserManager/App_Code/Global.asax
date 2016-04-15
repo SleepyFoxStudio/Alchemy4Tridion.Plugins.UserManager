@@ -1,0 +1,1 @@
+<%@ Application Language="C#" CodeBehind="~/App_Code/Global.asax.cs" Inherits="Alchemy4Tridion.Plugins.UserManager.Global" %>
